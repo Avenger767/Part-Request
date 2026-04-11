@@ -117,7 +117,7 @@ add a logo, or change fonts/colours.
 
 | Purpose | Library |
 |---|---|
-| Framework | [Next.js](https://nextjs.org) 14 |
+| Framework | [Next.js](https://nextjs.org) 15 |
 | PDF generation | [pdf-lib](https://pdf-lib.js.org/) |
 | Email | [Resend](https://resend.com) |
 | File upload parsing | [formidable](https://github.com/node-formidable/formidable) |
