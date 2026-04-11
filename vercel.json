@@ -1,1 +1,1 @@
-{\n  "buildCommand": "npm run build",\n  "outputDirectory": "build",\n  "framework": "create-react-app"\n}
+{"framework": "nextjs"}
