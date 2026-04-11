@@ -1,0 +1,162 @@
+/* styles/form.module.css
+ *
+ * Minimal, mobile-friendly styles for the parts request form.
+ * Edit freely — colours, spacing, fonts can all be changed here.
+ */
+
+/* ── Page container ──────────────────────────────────────────────────────── */
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: #111;
+  background: #f9f9f9;
+  min-height: 100vh;
+}
+
+/* ── Page title ──────────────────────────────────────────────────────────── */
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  border-bottom: 2px solid #222;
+  padding-bottom: 8px;
+}
+
+/* ── Form sections ───────────────────────────────────────────────────────── */
+.section {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.sectionTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 16px;
+  padding: 6px 10px;
+  background: #222;
+  color: #fff;
+  border-radius: 4px;
+}
+
+/* ── Labels and inputs ───────────────────────────────────────────────────── */
+.label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.875rem;
+  font-weight: 600;
+  gap: 4px;
+  margin-bottom: 14px;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fafafa;
+  box-sizing: border-box;
+  transition: border-color 0.15s;
+}
+
+.input:focus,
+.textarea:focus {
+  outline: none;
+  border-color: #0070f3;
+  background: #fff;
+}
+
+.textarea {
+  resize: vertical;
+}
+
+/* ── Two-column row (stacks on mobile) ───────────────────────────────────── */
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 540px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Misc helpers ────────────────────────────────────────────────────────── */
+.req {
+  color: #cc0000;
+  font-weight: 700;
+}
+
+.hint {
+  font-size: 0.8rem;
+  color: #666;
+  margin: -8px 0 12px;
+}
+
+.fileHint {
+  font-size: 0.8rem;
+  color: #555;
+  margin-top: 2px;
+}
+
+.approvalList {
+  font-size: 0.875rem;
+  margin: 4px 0 0 20px;
+  color: #444;
+}
+
+/* ── Error message ───────────────────────────────────────────────────────── */
+.error {
+  color: #cc0000;
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+
+/* ── Submit button ───────────────────────────────────────────────────────── */
+.btn {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: #0070f3;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.btn:hover:not(:disabled) {
+  background: #005bb5;
+}
+
+.btn:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+/* ── Success box ─────────────────────────────────────────────────────────── */
+.successBox {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.successBox h2 {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+}
+
+.successBox p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 24px;
+}
